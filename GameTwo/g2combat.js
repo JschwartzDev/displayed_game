@@ -65,8 +65,16 @@ function combat(){
         }//end of choose()
 
 
+      } else if(player.health <= 0){
+        let output = document.getElementById("outputTextArea");
+        output.value = "\n\n\n\n\n\n\n\n\n\n\n\n\nYou run away, mortally wounded" +
+        "\nPress enter to continue";
+
+        let inputSubmit = document.getElementById("inputSubmit");
+        inputSubmit.onclick = function(){
+          town();
+        }
       } else {
-        
         loot();
         combat();
       }//end of enemy health check if
