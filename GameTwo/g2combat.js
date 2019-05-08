@@ -129,6 +129,7 @@ function combat(){
                       }
                     }
                 } else {
+                  let input = document.getElementById("inputTextArea");
                   input.value = "";
                   output.value = "You have killed the " + enemy.name +
                   "\nWould you like to keep fighting?" +
