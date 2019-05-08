@@ -1,5 +1,7 @@
 :root {
   --margin-fix: 5.5vw;
+
+  --thin-black-border: 2px solid black;
 }
 
 * {
@@ -23,25 +25,26 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
 
-  background-color: gray;
+  background-color: #804140;
 }
 
 .gameBanner {
   text-align: center;
   font-size: 2em;
-  width: 77%;
+  width: 76.8%;
   position: relative;
   left: var(--margin-fix);
   margin-right: -1vw;
   background-color: darkgray;
   color: black;
+  border: var(--thin-black-border);
 }
 
 #textAreas {
   grid-column: 6/16;
   grid-row: 1/21;
   padding:5em 2em;
-  background-color: lightgray;
+  background-color: #801B19;
 }
 
 #rightPlaceHolder {
@@ -52,12 +55,12 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
 
-  background-color: gray;
+  background-color: #804140;
 }
 
 #buttonPanelRight {
   margin: 1em;
-  background-color: lightgray;
+  background-color: #801B19;
   display:flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -67,11 +70,16 @@
 .panelButton {
   padding: 1em;
   margin: 1em;
+
+  border-radius: 10%;
+  background-color: #FF7A75;
+  border: var(--thin-black-border);
+  box-shadow: 5px 5px 1px 1px black;
 }
 
 #buttonPanelLeft {
   margin: 1em;
-  background-color: lightgray;
+  background-color: #801B19;
   display:flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -83,6 +91,7 @@
   font-size: 1.5em;
 
   margin-left: var(--margin-fix);
+  border: 2px solid black;
 }
 
 #inputTextArea {
@@ -90,6 +99,7 @@
   font-size: 1.1em;
 
   width: 34.5vw;
+  border: var(--thin-black-border);
 }
 
 #inputSubmit {
