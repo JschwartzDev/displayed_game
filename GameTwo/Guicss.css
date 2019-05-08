@@ -200,6 +200,18 @@
   margin-left: var(--margin-fix);
 }
 
+#rightSwordImage {
+  position: relative;
+  left: 3vw;
+  top: 2vw;
+}
+
+#leftSwordImage {
+  position: relative;
+  top: 1vw;
+  size: 10vw;
+}
+
 
 
 
