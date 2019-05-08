@@ -1,5 +1,5 @@
 function combat(){
-  let enemey = null;
+
   let rand = Math.floor(Math.random() * 10);
   let enemy = enemyList[rand];
 
@@ -67,9 +67,9 @@ function combat(){
 
 
       } else {
+        let enemy = null;
         loot();
         combat();
-
       }//end of enemy health check if
     }//end of choices()
   } //end of leavetown()
