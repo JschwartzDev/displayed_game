@@ -67,7 +67,6 @@ function combat(){
 
 
       } else {
-        let enemy = null;
         loot();
         combat();
       }//end of enemy health check if
