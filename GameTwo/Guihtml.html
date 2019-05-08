@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Game!</title>
+    <link rel="stylesheet" href="Guicss.css" type="text/css">
+    <script defer type="text/javascript" src="intro.js"></script>
+    <script defer type="text/javascript" src="g2warrior.js"></script>
+    <script defer type="text/javascript" src="g2rogue.js"></script>
+    <script defer type="text/javascript" src="g2paladin.js"></script>
+    <script defer type="text/javascript" src="g2enemies.js"></script>
+    <script defer type="text/javascript" src="g2combat.js"></script>
+    <script defer type="text/javascript" src="g2shop2.js"></script>
+    <script defer type="text/javascript" src="town.js"></script>
+    <script defer type="text/javascript" src="characterSelection.js"></script>
+    <script defer type="text/javascript" src="game2.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section id="leftPlaceHolder">
+        <!--An empty span to push the button
+        list down in the grid automatically -->
+        <span></span>
+        <div id="buttonPanelLeft">
+          <input class="panelButton" type="submit" value="submit">
+          <input class="panelButton" type="submit" value="submit">
+          <input class="panelButton" type="submit" value="submit">
+        </div>
+      </section>
+      <div id="textAreas">
+        <div class="gameBanner">
+          <h1>Game Banner!</h1>
+        </div>
+        <textarea id="outputTextArea" rows="15" cols="50"></textarea>
+        <h4 id="inputHeader">Player input field:</h4>
+        <input autofocus id="inputTextArea" type="text"  onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('inputSubmit').click()"></input>
+        <div class="buttonGroup">
+          <input id="inputSubmit" type="submit" value="Submit" >
+        </div>
+      </div>
+      <section id="rightPlaceHolder">
+        <!--An empty span to push the button
+        list down in the grid automatically -->
+        <span></span>
+        <div id="buttonPanelRight">
+          <input class="panelButton" type="submit" value="submit">
+          <input class="panelButton"type="submit" value="submit">
+          <input class="panelButton"type="submit" value="submit">
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

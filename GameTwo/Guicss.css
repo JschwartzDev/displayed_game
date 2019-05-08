@@ -1,0 +1,101 @@
+:root {
+  --margin-fix: 5.5vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 55vw;
+
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, minmax(1fr, auto));
+}
+
+#leftPlaceHolder {
+  grid-column: 1/6;
+  grid-row:1/21;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+
+  background-color: gray;
+}
+
+.gameBanner {
+  text-align: center;
+  font-size: 2em;
+  width: 77%;
+  position: relative;
+  left: var(--margin-fix);
+  margin-right: -1vw;
+  background-color: darkgray;
+  color: black;
+}
+
+#textAreas {
+  grid-column: 6/16;
+  grid-row: 1/21;
+  padding:5em 2em;
+  background-color: lightgray;
+}
+
+#rightPlaceHolder {
+  grid-column: 16/21;
+  grid-row: 1/21;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+
+  background-color: gray;
+}
+
+#buttonPanelRight {
+  margin: 1em;
+  background-color: lightgray;
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 1.6em;
+}
+
+.panelButton {
+  padding: 1em;
+  margin: 1em;
+}
+
+#buttonPanelLeft {
+  margin: 1em;
+  background-color: lightgray;
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 1.6em;
+}
+
+#outputTextArea {
+  text-align: left;
+  font-size: 1.5em;
+
+  margin-left: var(--margin-fix);
+}
+
+#inputTextArea {
+  margin-left: var(--margin-fix);
+  font-size: 1.1em;
+
+  width: 34.5vw;
+}
+
+#inputSubmit {
+  margin-left: var(--margin-fix);
+}
+
+#inputHeader {
+  margin-left: var(--margin-fix);
+}
