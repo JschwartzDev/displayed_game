@@ -1,0 +1,210 @@
+:root {
+  --margin-fix: 5.5vw;
+
+  --thin-black-border: 2px solid black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 55vw;
+
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, minmax(1fr, auto));
+  border: var(--thin-black-border);
+}
+
+#leftPlaceHolder {
+  grid-column: 1/6;
+  grid-row:1/21;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+
+  background-color: #804140;
+}
+
+.gameBanner {
+  text-align: center;
+  font-size: 2em;
+  width: 76.8%;
+  position: relative;
+  left: var(--margin-fix);
+  margin-right: -1vw;
+  background-color: #400F0A;
+  color: darkgray;
+  text-shadow: 5px 5px black;
+  border: var(--thin-black-border);
+}
+
+#textAreas {
+  grid-column: 6/16;
+  grid-row: 1/21;
+  padding:5em 2em;
+  background-color: #801B19;
+  border: var(--thin-black-border);
+}
+
+#rightPlaceHolder {
+  grid-column: 16/21;
+  grid-row: 1/21;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+
+  background-color: #804140;
+}
+
+#buttonPanelRight {
+  margin: 1em;
+  background-color: #801B19;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,minmax(1fr,auto));
+  padding: 1.6em;
+  border: var(--thin-black-border);
+}
+
+#rightOutput {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+#healingPotions {
+  grid-column: 1/2;
+  grid-row:2/3;
+  background-image: url("https://i.postimg.cc/yd8XM0kD/PixelArt.png");
+  background-size: 4vw 3vw;
+
+}
+
+#gold {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-image: url("https://i.postimg.cc/7hC16D1D/gold-png.png");
+  background-size: 4vw 3vw;
+}
+
+#gear {
+  grid-column: 3/4;
+  grid-row: 2/3;
+
+  background-image: url("https://i.postimg.cc/sXH9s1hw/armor-png.png");
+  background-size: 4vw 3vw;
+}
+
+.panelButtonRight {
+  padding: 1em;
+  margin: 1em;
+  margin-top: 3em;
+  width: 4vw;
+  height: 3vw;
+  border-radius: 10%;
+  background-color: #FF7A75;
+  border: var(--thin-black-border);
+  box-shadow: 5px 5px 1px 1px black;
+  outline: 0;
+}
+
+.panelButtonLeft {
+  padding: 1em;
+  margin: 1em;
+  margin-top: 3em;
+  width: 4vw;
+  height: 3vw;
+  border-radius: 10%;
+  background-color: #FF7A75;
+  border: var(--thin-black-border);
+  box-shadow: 5px 5px 1px 1px black;
+  outline: 0;
+}
+
+.inputSubmit {
+  padding: 1em;
+  margin: 1em;
+  width: 6vw;
+  height: 3vw;
+  border-radius: 8%;
+  background-color: #FF7A75;
+  border: var(--thin-black-border);
+  box-shadow: 5px 5px 1px 1px black;
+}
+
+#buttonPanelLeft {
+  margin: 1em;
+  background-color: #801B19;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,minmax(1fr,auto));
+  padding: 1.6em;
+  border: var(--thin-black-border);
+}
+
+#health {
+  background-image: url("https://i.postimg.cc/Gp3nfhnX/heart.png");
+  background-size: 4vw 3vw;
+}
+
+#strength {
+  background-image: url("https://i.postimg.cc/W49ccL2T/fist.png");
+  background-size: 4vw 3vw;
+}
+
+#defense {
+  background-image: url("https://i.postimg.cc/K8DyQ3wK/Shield.png");
+  background-size: 4vw 3vw;
+}
+
+#leftOutPut {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+#outputTextArea {
+  text-align: left;
+  font-size: 1.5em;
+
+  margin-left: var(--margin-fix);
+  border: 2px solid black;
+}
+
+#inputTextArea {
+  margin-left: var(--margin-fix);
+  font-size: 1.1em;
+
+  width: 34.5vw;
+  border: var(--thin-black-border);
+}
+
+#inputSubmit {
+  margin-left: var(--margin-fix);
+
+  background-image: url("https://i.postimg.cc/PxnNZHkT/enter-png.png");
+  background-size: 6vw 3vw;
+
+}
+
+#inputHeader {
+  margin-left: var(--margin-fix);
+}
+
+
+
+
+
+@keyframes buttonPress {
+
+  0% {box-shadow: 2px 2px 1px 1px black;}
+  100% {box-shadow: 5px 5px 1px 1px black;}
+}
+
+@keyframes buttonRelease {
+  0% {box-shadow: 2px 2px 1px 1px black;}
+  100% {box-shadow: 5px 5px 1px 1px black;}
+}
