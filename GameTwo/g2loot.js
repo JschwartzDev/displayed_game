@@ -1,8 +1,17 @@
 function loot(){
   let rand = Math.floor(Math.random() * 10)+ 1;
-  let lootTable = ["potion","gold coins","potion",
+  let lootTable = ["potion","gold coins","iron ore",
+                  "potion","gold coins","iron ore",
+                  "potion"," gold coins", "mithril ore","gold coins",
+                  "potion","iron ore","gold coins",
+                  "potion","mithril ore","potion",
+                  "iron ore","thorium ore", "gold coins","potion",
+                  "potion","gold coins","mithril ore",
                   "gold coins","iron ore","gold coins",
-                  "iron ore","gold coins", "potion","iron ore"];
+                  "thorium ore","gold coins", "potion","iron ore",
+                  "potion","gold coins","mithril ore",
+                  "gold coins","iron ore","gold coins",
+                  "iron ore","gold coins", "thorium ore","iron ore"];
 
   if(lootTable[rand] === "potion"){
     let input = document.getElementById("inputTextArea");
@@ -27,5 +36,21 @@ function loot(){
 
     output.value = "\n\n\n\nThe enemy dropped 'iron ore'" +
     "\nYou now have " + player.ironOreCount + " iron ore!";
+  } else if(lootTable[rand] === "mithril ore"){
+    player.mithrilOreCount++;
+    let output = document.getElementById("rightOutput");
+    let input = document.getElementById("inputTextArea");
+    input.value = "";
+
+    output.value = "\n\n\n\nThe enemy dropped 'mithril ore'" +
+    "\nYou now have " + player.mithrilOreCount + " mithril ore!";
+  } else if(lootTable[rand] === "thorium ore"){
+    player.thoriumOreCount++;
+    let output = document.getElementById("rightOutput");
+    let input = document.getElementById("inputTextArea");
+    input.value = "";
+
+    output.value = "\n\n\n\nThe enemy dropped 'thorium ore'" +
+    "\nYou now have " + player.thoriumOreCount + " thorium ore!";
   }
 }
