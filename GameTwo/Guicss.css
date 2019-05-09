@@ -14,14 +14,14 @@
 
   display: grid;
   grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(20, minmax(1fr, auto));
+  grid-template-rows: repeat(10, minmax(1fr, auto));
   border: var(--thin-black-border);
 }
 
 #leftPlaceHolder {
   grid-column: 1/6;
-  grid-row:1/21;
-
+  grid-row:1/5;
+  height: 55vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -46,16 +46,17 @@
 
 #textAreas {
   grid-column: 6/16;
-  grid-row: 1/21;
+  grid-row: 1/5;
   padding:5em 2em;
   background-color: #801B19;
   border: var(--thin-black-border);
+  height: 44.5vw;
 }
 
 #rightPlaceHolder {
   grid-column: 16/21;
-  grid-row: 1/21;
-
+  grid-row: 1/5;
+  height: 55vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -100,6 +101,11 @@
   grid-row: 2/3;
 
   background-image: url("https://i.postimg.cc/TY5qvrJs/backpack-png.png");
+  background-size: 4vw 3vw;
+}
+
+#drinkPot {
+  background-image: url("https://i.postimg.cc/gcSqjzMh/healpixelart.png");
   background-size: 4vw 3vw;
 }
 
