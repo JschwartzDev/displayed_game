@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+body {
+  background-color: #804140;
+}
+
+
 .wrapper {
   height: 55vw;
 
@@ -48,23 +53,16 @@
   grid-column: 6/16;
   grid-row: 1/5;
   padding:5em 2em;
+  margin-top: 1em;
   background-color: #801B19;
   border: var(--thin-black-border);
-  height: 44.5vw;
+  height: 42.3vw;
 }
 
-#rightPlaceHolder {
-  grid-column: 16/21;
-  grid-row: 1/5;
-  height: 55vw;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-
-  background-color: #804140;
-}
 
 #buttonPanelRight {
+  grid-column: 16/21;
+  grid-row: 1/5;
   margin: 1em;
   background-color: #801B19;
   display: grid;
@@ -147,6 +145,8 @@
 }
 
 #buttonPanelLeft {
+  grid-column: 1/6;
+  grid-row:1/5;
   margin: 1em;
   background-color: #801B19;
   display: grid;
@@ -155,6 +155,8 @@
   padding: 1.6em;
   border: var(--thin-black-border);
 }
+
+
 
 #health {
   background-image: url("https://i.postimg.cc/Gp3nfhnX/heart.png");
