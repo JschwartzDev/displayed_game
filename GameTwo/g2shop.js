@@ -32,10 +32,10 @@ function shop(){
           switch(input.value){
             case "potion":
             case "potion":
-              if(player.gold >= 40){
+              if(player.gold >= 10){
                 input.value ="";
                 player.potionCount++;
-                player.gold -= 40;
+                player.gold -= 10;
                 output.value = "\n\n\n\n\n\n\n\n\n\n\n\n\nYou now have " + player.potionCount + " potions" +
                 "\nPress enter to return to the selection";
 
