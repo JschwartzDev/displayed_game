@@ -6,7 +6,7 @@ function shop(){
   function choices(){
     output.value = "\n\n\n\n\n\n\n\n\nYour gold: " + player.gold +
     "\nThe selection - " +
-    "\n1: potion - 40g" +
+    "\n1: potion - 10g" +
     "\n2: sword - 200g" +
     "\n3: chainmail - 500g" +
     "\n4: leave";
