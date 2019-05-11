@@ -1,0 +1,287 @@
+:root {
+  --margin-fix: 5.5vw;
+
+  --thin-black-border: 2px solid black;
+  --pink-color: #FF837A;
+
+  --health-bar-height: 0%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #804140;
+  background-size: 50vw 50vw;
+}
+
+.healthBar {
+  background-color: transparent;
+}
+
+.healthBarHealth {
+  background-color: red;
+}
+
+#healthBarDiv {
+  grid-column:1/2;
+  grid-row:10/12;
+  margin:0;
+  padding:0;
+
+  position: absolute;
+  top: 13vw;
+  right: 67vw;
+  border: 2px solid black;
+  width: 2vw;
+  height: 20vw;
+  transform: rotate(180deg);
+}
+
+#healthSpan {
+  display: block;
+  height: var(--health-bar-height);
+  background-color: rgb(43,194,83);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+  box-shadow:
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+.wrapper {
+  height: 55vw;
+
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(10, minmax(1fr, auto));
+  border: var(--thin-black-border);
+}
+
+
+.gameBanner {
+  text-align: center;
+  font-size: 2em;
+  width: 77.4%;
+  position: relative;
+  left: var(--margin-fix);
+  margin-right: -1vw;
+  background-color: var(--pink-color);
+  color: black;
+  text-shadow: 2px 2px #7C7D80;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#textAreas {
+  grid-column: 6/16;
+  grid-row: 1/5;
+  padding:5em 2em;
+  margin-top: 1em;
+  background-color: #801B19;
+  border: var(--thin-black-border);
+  height: 42.3vw;
+}
+
+
+#buttonPanelRight {
+  grid-column: 16/21;
+  grid-row: 1/5;
+  margin: 1em;
+  background-color: #801B19;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,minmax(1fr,auto));
+  padding: 1.6em;
+  border: var(--thin-black-border);
+}
+
+#rightOutput {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  border: var(--thin-black-border);
+  resize: none;
+
+  animation-name: "";
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+#healingPotions {
+  grid-column: 1/2;
+  grid-row:2/3;
+  background-image: url("https://i.postimg.cc/NFmGr7hF/healthpot.png");
+  background-size: 4vw 3vw;
+
+}
+
+#gold {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-image: url("https://i.postimg.cc/R0p0rZQS/gold.png");
+  background-size: 4vw 3vw;
+}
+
+#gear {
+  grid-column: 3/4;
+  grid-row: 2/3;
+
+  background-image: url("https://i.postimg.cc/pTgXTc63/inventory.png");
+  background-size: 4vw 3vw;
+}
+
+#drinkPot {
+  background-image: url("https://i.postimg.cc/LXq8mFNz/heal.png");
+  background-size: 4vw 3vw;
+}
+
+.panelButtonRight {
+  padding: 1em;
+  margin: 1em;
+  margin-top: 3em;
+  width: 4vw;
+  height: 3vw;
+  border-radius: 10%;
+  background-color: var(--pink-color);
+  border: var(--thin-black-border);
+  box-shadow: 5px 5px 1px 1px black;
+  outline: 0;
+}
+
+.panelButtonLeft {
+  padding: 1em;
+  margin: 1em;
+  margin-top: 3em;
+  width: 4vw;
+  height: 3vw;
+  border-radius: 10%;
+  background-color: var(--pink-color);
+  border: var(--thin-black-border);
+  box-shadow: 5px 5px 1px 1px black;
+  outline: 0;
+}
+
+.inputSubmit {
+  padding: 1em;
+  margin: 1em;
+  width: 6vw;
+  height: 3vw;
+  border-radius: 8%;
+  background-color: var(--pink-color);
+  border: var(--thin-black-border);
+  box-shadow: 5px 5px 1px 1px black;
+}
+
+#buttonPanelLeft {
+  grid-column: 1/6;
+  grid-row:1/5;
+  margin: 1em;
+  background-color: #801B19;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,minmax(1fr,auto));
+  padding: 1.6em;
+  border: var(--thin-black-border);
+}
+
+
+
+#health {
+  background-image: url("https://i.postimg.cc/h4dtwgJn/health.png");
+  background-size: 4vw 3vw;
+}
+
+#strength {
+  background-image: url("https://i.postimg.cc/JhzhdkXY/strength.png");
+  background-size: 4vw 3vw;
+}
+
+#defense {
+  background-image: url("https://i.postimg.cc/8PmnPJFb/empty-Armor.png");
+  background-size: 4vw 3vw;
+}
+
+#crafting {
+  background-image: url("https://i.postimg.cc/zGjBjjyR/crafting.png");
+  background-size: 4vw 3vw;
+}
+
+#intellect {
+  background-image: url("https://i.postimg.cc/2SWjLPJz/intellect2.png");
+  background-size: 4vw 3vw;
+}
+
+#xp {
+  font-weight: bold;
+}
+
+#agility {
+  background-image: url("https://i.postimg.cc/QxBpBdJv/agility.png");
+  background-size: 4vw 3vw;
+}
+
+#leftOutPut {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  border: var(--thin-black-border);
+  resize: none;
+
+  animation-name: "";
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+#outputTextArea {
+  text-align: left;
+  font-size: 1.5em;
+  resize: none;
+  margin-left: var(--margin-fix);
+  border: 2px solid black;
+
+  animation-name: "";
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+#inputTextArea {
+  margin-left: var(--margin-fix);
+  font-size: 1.1em;
+  width: 34.5vw;
+  border: var(--thin-black-border);
+}
+
+#inputSubmit {
+  margin-left: var(--margin-fix);
+  background-image: url("https://i.postimg.cc/HLnptCGf/newEnter.png");
+  background-size: 6vw 3vw;
+}
+
+#inputHeader {
+  margin-left: var(--margin-fix);
+}
+
+
+
+
+
+@keyframes levelUp {
+  0%{background-color: cyan;}
+  25%{background-color: yellow;}
+  50%{background-color: cyan;}
+  75%{background-color: yellow;}
+  100%{background-color: cyan;}
+}
