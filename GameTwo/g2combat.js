@@ -39,7 +39,22 @@ function combat(){
             switch(input.value){
               case "attack":
               case "Attack":
-                player.mana -= 20;
+
+              if(player.name === "Mage" || player.name === "Shaman"){
+                if(player.mana <= 0){
+                  rightOutput.value = "You dont have any  mana!";
+                } else {
+                  player.mana -= 20;
+                  let playerDmg = player.combat();
+                  let enemyDmg = enemy.attack - player.defense;
+                  if(enemyDmg < 0){
+                    enemyDmg = 0;
+                  }
+                  player.health -= enemyDmg;
+                  enemy.health -= playerDmg;
+                  choices();
+                }
+              } else {
                 let playerDmg = player.combat();
                 let enemyDmg = enemy.attack - player.defense;
                 if(enemyDmg < 0){
@@ -49,6 +64,9 @@ function combat(){
                 player.health -= enemyDmg;
                 enemy.health -= playerDmg;
                 choices();
+              }
+
+
                 break;
               case "health":
               case "Health":
