@@ -142,6 +142,7 @@ function levelCheck(){
   removeName();
   if(player.exp >= player.level * 1000){
     player.maxHealth = parseInt(player.maxHealth * 1.2);
+    player.potHealAmount = parseInt(player.potHealAmount * 1.2);
     player.health = parseInt(player.maxHealth);
     levelUpScene();
     player.level++;
