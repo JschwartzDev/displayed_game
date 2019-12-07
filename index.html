@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Game!</title>
-    <link rel="stylesheet" href="Guicss.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
-    <script defer type="text/javascript" src="intro.js"></script>
-    <script defer type="text/javascript" src="declareClasses.js"></script>
-    <script defer type="text/javascript" src="g2enemies.js"></script>
-    <script defer type="text/javascript" src="g2loot.js"></script>
-    <script defer type="text/javascript" src="sidebarButtons.js"></script>
-    <script defer type="text/javascript" src="g2combat.js"></script>
-    <script defer type="text/javascript" src="craft.js"></script>
-    <script defer type="text/javascript" src="smith.js"></script>
-    <script defer type="text/javascript" src="smelt.js"></script>
-    <script defer type="text/javascript" src="smeltMetals.js"></script>
-    <script defer type="text/javascript" src="smithMetals.js"></script>
-    <script defer type="text/javascript" src="g2shop.js"></script>
-    <script defer type="text/javascript" src="town.js"></script>
-    <script defer type="text/javascript" src="characterSelection.js"></script>
-    <script defer type="text/javascript" src="sceneChanger.js"></script>
-    <script defer type="text/javascript" src="game2.js"></script>
-  </head>
-  <body id="body">
-    <div class="wrapper">
-        <div id="buttonPanelLeft">
-          <textarea id="leftOutPut" class="bounceInDown" rows="6" cols="2"></textarea>
-          <input id="health" class="panelButtonLeft" type="submit" value="">
-          <input id="strength" class="panelButtonLeft" type="submit" value="">
-          <input id="defense" class="panelButtonLeft" type="submit" value="">
-          <input id="crafting" class="panelButtonRight" type="submit" value="">
-          <input id="intellect" class="panelButtonRight" type="submit" value="">
-          <input id="" class="panelButtonRight" type="submit" value="">
-          <input id="xp" class="panelButtonRight" type="submit" value="XP">
-          <input id="agility" class="panelButtonRight" type="submit" value="">
-          <input id="" class="panelButtonRight" type="submit" value="">
-        </div>
-      <div id="textAreas">
-        <div class="gameBanner animated bounceInDown">
-          <h1>Text Souls</h1>
-        </div>
-        <div id="manaBarDiv" class="manaBar">
-          <span id="manaSpan"></span>
-        </div>
-        <div id="healthBarDiv" class="healthBar">
-          <span id="healthSpan"></span>
-        </div>
-        <div id="enemyHealthBarDiv" class="enemyHealthBarDiv">
-          <span id="enemyHealthBarSpan"></span>
-        </div>
-        <textarea id="outputTextArea"  class="animated bounceInDown" rows="15" cols="50"></textarea>
-        <h4 id="inputHeader">Player input field:</h4>
-        <input autofocus id="inputTextArea" type="text"  onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('inputSubmit').click()"></input>
-        <div class="buttonGroup">
-          <input class="inputSubmit" id="inputSubmit" type="submit" value="" >
-        </div>
-      </div>
-        <div id="buttonPanelRight">
-          <textarea id="rightOutput"  class="bounceInDown" rows="6" cols="2"></textarea>
-          <input id="healingPotions" onkeydown="" class="panelButtonRight"  type="submit" value="">
-          <input id="gold" class="panelButtonRight" type="submit" value="">
-          <input id= "gear" class="panelButtonRight" type="submit" value="">
-          <input id="drinkPot" class="panelButtonRight" type="submit" value="">
-          <input id="" class="panelButtonRight" type="submit" value="">
-          <input id="" class="panelButtonRight" type="submit" value="">
-          <input id="" class="panelButtonRight" type="submit" value="">
-          <input id="" class="panelButtonRight" type="submit" value="">
-          <input id="" class="panelButtonRight" type="submit" value="">
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Game!</title>
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+  <script defer type="text/javascript" src="intro.js"></script>
+  <script defer type="text/javascript" src="declareClasses.js"></script>
+  <script defer type="text/javascript" src="g2enemies.js"></script>
+  <script defer type="text/javascript" src="g2loot.js"></script>
+  <script defer type="text/javascript" src="sidebarButtons.js"></script>
+  <script defer type="text/javascript" src="g2combat.js"></script>
+  <script defer type="text/javascript" src="craft.js"></script>
+  <script defer type="text/javascript" src="smith.js"></script>
+  <script defer type="text/javascript" src="smelt.js"></script>
+  <script defer type="text/javascript" src="smeltMetals.js"></script>
+  <script defer type="text/javascript" src="smithMetals.js"></script>
+  <script defer type="text/javascript" src="g2shop.js"></script>
+  <script defer type="text/javascript" src="town.js"></script>
+  <script defer type="text/javascript" src="characterSelection.js"></script>
+  <script defer type="text/javascript" src="sceneChanger.js"></script>
+  <script defer type="text/javascript" src="game2.js"></script>
+</head>
+
+<body id="body">
+  <div class="wrapper">
+    <div id="buttonPanelLeft">
+      <textarea id="leftOutPut" class="bounceInDown" rows="6" cols="2"></textarea>
+      <input id="health" class="panelButtonLeft" type="submit" value="">
+      <input id="strength" class="panelButtonLeft" type="submit" value="">
+      <input id="defense" class="panelButtonLeft" type="submit" value="">
+      <input id="crafting" class="panelButtonRight" type="submit" value="">
+      <input id="intellect" class="panelButtonRight" type="submit" value="">
+      <input id="" class="panelButtonRight" type="submit" value="">
+      <input id="xp" class="panelButtonRight" type="submit" value="XP">
+      <input id="agility" class="panelButtonRight" type="submit" value="">
+      <input id="" class="panelButtonRight" type="submit" value="">
     </div>
-  </body>
+    <div id="textAreas">
+      <div class="gameBanner animated bounceInDown">
+        <h1>Text Souls</h1>
+      </div>
+      <div id="manaBarDiv" class="manaBar">
+        <span id="manaSpan"></span>
+      </div>
+      <div id="healthBarDiv" class="healthBar">
+        <span id="healthSpan"></span>
+      </div>
+      <div id="enemyHealthBarDiv" class="enemyHealthBarDiv">
+        <span id="enemyHealthBarSpan"></span>
+      </div>
+      <textarea id="outputTextArea" class="animated bounceInDown" rows="15" cols="50"></textarea>
+      <h4 id="inputHeader">Player input field:</h4>
+      <input autofocus id="inputTextArea" type="text" onkeydown="if (event.keyCode == 13)
+                        document.getElementById('inputSubmit').click()"></input>
+      <div class="buttonGroup">
+        <input class="inputSubmit" id="inputSubmit" type="submit" value="">
+      </div>
+    </div>
+    <div id="buttonPanelRight">
+      <textarea id="rightOutput" class="bounceInDown" rows="6" cols="2"></textarea>
+      <input id="healingPotions" onkeydown="" class="panelButtonRight" type="submit" value="">
+      <input id="gold" class="panelButtonRight" type="submit" value="">
+      <input id="gear" class="panelButtonRight" type="submit" value="">
+      <input id="drinkPot" class="panelButtonRight" type="submit" value="">
+      <input id="" class="panelButtonRight" type="submit" value="">
+      <input id="" class="panelButtonRight" type="submit" value="">
+      <input id="" class="panelButtonRight" type="submit" value="">
+      <input id="" class="panelButtonRight" type="submit" value="">
+      <input id="" class="panelButtonRight" type="submit" value="">
+    </div>
+  </div>
+</body>
+
 </html>
